@@ -1,0 +1,26 @@
+# Ignore Python bytecode
+*.pyc
+*.pyo
+__pycache__
+
+# Ignore datasets and large files
+data/raw/*
+data/processed/*
+outputs/
+*.h5
+*.pkl
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+*.swp
+*.bak
+
+# Ignore virtual environment folders
+venv/
+env/
+__pycache__/
+
+# Ignore system-specific files
+.DS_Store  # macOS system files
+Thumbs.db  # Windows system files

@@ -1,0 +1,30 @@
+# Model Configuration
+model:
+  type: "text_to_3d" # Define the type of model (e.g., 'text_to_3d', 'image_classification')
+  encoder: "clip" # Encoder model (e.g., CLIP, BERT)
+  decoder: "voxelnet" # Decoder model (e.g., VoxelNet)
+
+# Training Configuration
+training:
+  batch_size: 32 # Batch size for training
+  epochs: 100 # Number of epochs
+  learning_rate: 0.001 # Learning rate for optimizer
+  optimizer: "adam" # Optimizer type (e.g., Adam, SGD)
+  early_stopping: true # Whether to stop training early if validation loss stops improving
+
+# Dataset Configuration
+data:
+  train_data: "data/processed/train_data" # Path to training data
+  val_data: "data/processed/val_data" # Path to validation data
+  test_data: "data/processed/test_data" # Path to test data
+
+# Logging & Checkpoints
+logging:
+  log_dir: "outputs/logs" # Directory to store logs
+  checkpoint_dir: "outputs/checkpoints" # Directory to save checkpoints
+  save_frequency: 10 # How often to save checkpoints (every N epochs)
+
+# GPU Settings
+device:
+  use_gpu: true # Whether to use GPU if available
+  gpu_device: 0 # GPU device ID to use (if multiple GPUs are available)
