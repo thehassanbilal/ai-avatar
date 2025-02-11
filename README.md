@@ -163,8 +163,8 @@ Contains utility functions that are shared across the project.
 Clone the repository and install the required dependencies:
 
 ```bash
-git clone https://github.com/yourusername/ai_project.git
-cd ai_project
+git clone https://github.com/thehassanbilal/ai-avatar
+cd ai-avatar
 pip install -r requirements.txt
 ```
 
